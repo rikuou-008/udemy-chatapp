@@ -8,14 +8,14 @@ import MessageField from "./MessageField"
 const useStyles = makeStyles({
     root: {
         gridRow: 2,
-        margin: "26px"
+        margin: "26px",
     },
 });
 
 const MessageInputField = ({name}) => {
    const [text, setText] = useState('');
    const classes = useStyles();
-   const avatarPath = gravatarPath(name)
+   const avatarPath = gravatarPath(name);
 
   return (
   <div className={classes.root}>
